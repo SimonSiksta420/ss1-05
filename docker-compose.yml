@@ -2,8 +2,8 @@ version: '3.3'
 
 services:
     apache2:
-        image: httpd
+        image: nginx:latest
         ports:
-             - 8080:80
+             - 80:80
         volumes:
-             - ./apache2:/usr/local/apache2/htdocs
+             - ./www:/usr/share/nginx/html
